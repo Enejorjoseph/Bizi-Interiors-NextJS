@@ -101,7 +101,7 @@
 @media(max-width:600px){
   .hero-main{grid-template-areas:"copy product" "actions actions";grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);grid-template-rows:auto auto;column-gap:4px;row-gap:12px;padding:20px 0 14px;align-items:center}
   .hero-copy{grid-area:copy;align-self:center}
-  .hero-product{grid-area:product;grid-row:auto;align-self:center;min-width:0;height:auto;min-height:0;margin:0;overflow:visible}
+  .hero-product{grid-area:product;grid-row:auto;align-self:center;min-width:0;height:auto;min-height:0;margin:0;overflow:hidden}
   .hero-product img{width:100%;height:auto;max-height:clamp(220px,66vw,320px);object-fit:contain;object-position:center}
   .hero-actions{grid-area:actions;width:100%;display:grid;grid-template-columns:1fr;gap:9px;min-width:0}
   .hero-actions .button{width:100%;min-width:0;min-height:52px;padding:11px 15px;gap:10px;font-size:11px;letter-spacing:.2px;border-radius:4px}
@@ -121,4 +121,5 @@
 
 /* Chair-only adjustment: enlarge the supplied chair artwork without moving its hero position or changing other elements. */
 .hero-product img{transform:scale(1.22);transform-origin:center center}
-@media(max-width:600px){.hero-product img{transform:scale(1.18)}}
+@media(max-width:600px){.hero-product img{transform:translateX(-5vw) scale(1.5)}.cart-count{width:18px;height:18px;top:-8px;right:-4px;font-size:9px}}
+@media(max-width:320px){.brand-wordmark{width:min(50vw,245px)}.header-inner{gap:6px}}
